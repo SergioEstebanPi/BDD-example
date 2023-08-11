@@ -27,4 +27,9 @@ public class DiscountServiceTest {
     public void we_should_get_fifteen_percentage_discount() {
         Assert.assertEquals("15%", percentage);
     }
+
+    @Then("we shouldn't get any percentage discount")
+    public void weShouldnTGetAnyPercentageDiscount() {
+        Assert.assertEquals("NA", percentage);
+    }
 }
